@@ -1,5 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.IO;
+using System.Text;
+using System.Reflection;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace Calendar
 {
@@ -32,8 +38,23 @@ namespace Calendar
             }
         }
 
+        private List<Evenement> getEvenements()
+        {
+            string path = @"..\..\..\Calendar\Events.json";
+            string strEvent = File.ReadAllText(path);
+            string[] strEventSplit = strEvent.Split(';');
+            List<Evenement> eventList = new List<Evenement>();
+            foreach (string str in strEventSplit)
+            {
+                Evenement eventObj = JsonConvert.DeserializeObject<Evenement>(str);
+                eventList.Add(eventObj);
+            }
+            return eventList;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
+
             label1.Text = pickerDate.ToString("Y");
             int dayInCurMonth = DateTime.DaysInMonth(curDate.Year, curDate.Month);
             hideBtn(dayInCurMonth);
@@ -56,7 +77,7 @@ namespace Calendar
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

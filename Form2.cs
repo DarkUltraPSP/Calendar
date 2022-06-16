@@ -44,7 +44,7 @@ namespace Calendar
             string json = JsonConvert.SerializeObject(newEvent);
             Debug.WriteLine(json);
             string path = @"..\..\..\Calendar\Events.json";
-            File.AppendAllText(path, json + "," + Environment.NewLine);
+            File.AppendAllText(path, json + ";" + Environment.NewLine);
             this.Hide();
         }
     }
