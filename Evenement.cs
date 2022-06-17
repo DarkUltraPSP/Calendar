@@ -8,19 +8,25 @@ namespace Calendar
 {
     internal class Evenement
     {
+        public int id;
         public DateTime dateEvent;
         public string nameEvent;
         public string descEvent;
 
         //Constructor
-        public Evenement(DateTime dateEvent, string nameEvent, string descEvent)
+        public Evenement(int id, DateTime dateEvent, string nameEvent, string descEvent)
         {
+            this.id = id;
             this.dateEvent = dateEvent;
             this.nameEvent = nameEvent;
             this.descEvent = descEvent;
         }
 
         //Getters
+        public int getId()
+        {
+            return id;
+        }
         public DateTime GetDateEvent()
         {
             return dateEvent;
@@ -37,7 +43,7 @@ namespace Calendar
         //To String
         public override string ToString()
         {
-            return "Date: " + dateEvent.ToString("D") + "\nName: " + nameEvent + "\nDescription: " + descEvent;
+            return "Id: " + id + " Date: " + dateEvent + " Name: " + nameEvent + " Desc: " + descEvent;
         }
     }
 }

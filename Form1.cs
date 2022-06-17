@@ -11,7 +11,7 @@ namespace Calendar
 {
     public partial class form1 : Form
     {
-        Form2 form2;
+        Form3 form3;
         DateTime curDate;
         DateTime pickerDate;
 
@@ -36,20 +36,6 @@ namespace Calendar
                     button31.Hide();
                     break;
             }
-        }
-
-        private List<Evenement> getEvenements()
-        {
-            string path = @"..\..\..\Calendar\Events.json";
-            string strEvent = File.ReadAllText(path);
-            string[] strEventSplit = strEvent.Split(';');
-            List<Evenement> eventList = new List<Evenement>();
-            foreach (string str in strEventSplit)
-            {
-                Evenement eventObj = JsonConvert.DeserializeObject<Evenement>(str);
-                eventList.Add(eventObj);
-            }
-            return eventList;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -83,218 +69,218 @@ namespace Calendar
         private void button1_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button1.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button2.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button3.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button4.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button5.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button6.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button7.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button8.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button9.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button10.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button11.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button12.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button13.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button14.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button15.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button16.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button17.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button18.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button19.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button20.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button21.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button22.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button23.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button24_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button24.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button25.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button26_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button26.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button27_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button27.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button28_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button28.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button29_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button29.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button30_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button30.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void button31_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = new DateTime(pickerDate.Year, pickerDate.Month, Int32.Parse(button31.Text));
-            form2 = new Form2(selectedDate);
-            form2.Show();
+            form3 = new Form3(selectedDate);
+            form3.Show();
         }
 
         private void dateTimePicker1_ValueChanged_1(object sender, EventArgs e)

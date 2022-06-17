@@ -1,0 +1,16 @@
+C:\Users\darku\source\repos\Calendar\Calendar\bin\Release\Calendar.exe.config
+C:\Users\darku\source\repos\Calendar\Calendar\bin\Release\Calendar.exe
+C:\Users\darku\source\repos\Calendar\Calendar\bin\Release\Calendar.pdb
+C:\Users\darku\source\repos\Calendar\Calendar\bin\Release\Newtonsoft.Json.dll
+C:\Users\darku\source\repos\Calendar\Calendar\bin\Release\Newtonsoft.Json.xml
+C:\Users\darku\source\repos\Calendar\Calendar\obj\Release\Calendar.csproj.AssemblyReference.cache
+C:\Users\darku\source\repos\Calendar\Calendar\obj\Release\Calendar.csproj.SuggestedBindingRedirects.cache
+C:\Users\darku\source\repos\Calendar\Calendar\obj\Release\Calendar.form1.resources
+C:\Users\darku\source\repos\Calendar\Calendar\obj\Release\Calendar.Form2.resources
+C:\Users\darku\source\repos\Calendar\Calendar\obj\Release\Calendar.Form3.resources
+C:\Users\darku\source\repos\Calendar\Calendar\obj\Release\Calendar.Properties.Resources.resources
+C:\Users\darku\source\repos\Calendar\Calendar\obj\Release\Calendar.csproj.GenerateResource.cache
+C:\Users\darku\source\repos\Calendar\Calendar\obj\Release\Calendar.csproj.CoreCompileInputs.cache
+C:\Users\darku\source\repos\Calendar\Calendar\obj\Release\Calendar.csproj.CopyComplete
+C:\Users\darku\source\repos\Calendar\Calendar\obj\Release\Calendar.exe
+C:\Users\darku\source\repos\Calendar\Calendar\obj\Release\Calendar.pdb

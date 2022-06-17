@@ -13,3 +13,4 @@ C:\Users\darku\source\repos\Calendar\Calendar\obj\Debug\Calendar.Form2.resources
 C:\Users\darku\source\repos\Calendar\Calendar\bin\Debug\Newtonsoft.Json.dll
 C:\Users\darku\source\repos\Calendar\Calendar\bin\Debug\Newtonsoft.Json.xml
 C:\Users\darku\source\repos\Calendar\Calendar\obj\Debug\Calendar.csproj.CopyComplete
+C:\Users\darku\source\repos\Calendar\Calendar\obj\Debug\Calendar.Form3.resources

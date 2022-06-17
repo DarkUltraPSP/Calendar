@@ -38,13 +38,7 @@ namespace Calendar
 
         private void addEvent_Click(object sender, EventArgs e)
         {
-            Evenement newEvent = new Evenement(selectedDate, textBox1.Text, richTextBox1.Text);
-            Debug.WriteLine(newEvent.ToString());
-            // Add the new event to a JSON file
-            string json = JsonConvert.SerializeObject(newEvent);
-            Debug.WriteLine(json);
-            string path = @"..\..\..\Calendar\Events.json";
-            File.AppendAllText(path, json + ";" + Environment.NewLine);
+            EvenementDto.addEvenements(selectedDate, textBox1.Text, richTextBox1.Text);
             this.Hide();
         }
     }
